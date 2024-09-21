@@ -1,7 +1,7 @@
 Weather Seasons API
 ============
 
-Weather Seasons is a simple tool for getting the dates of the solstice and equinox. It returns the dates of the solstice and equinox for the current year.
+Weather Seasons is a simple tool for getting the dates of the solstice and equinox. It returns the dates of the solstice and equinox for a given year.
 
 ![Build Status](https://img.shields.io/badge/build-passing-green)
 ![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
@@ -70,13 +70,15 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-This API does not require a Query
+var queryOptions = new WeatherSeasonsQueryOptions {
+  year = 2024
+};
 ```
 
 ###### Simple Request
 
 ```
-var response = apiClient.Execute();
+var response = apiClient.Execute(queryOptions);
 if(response.error != null) {
 	Console.WriteLine(response.error);
 } else {
@@ -92,6 +94,8 @@ if(response.error != null) {
   "status": "ok",
   "error": null,
   "data": {
+    "year": 2024,
+    "timezone": "UTC",
     "march_equinox": "2024-03-20 03:06:24",
     "june_solstice": "2024-06-20 20:50:58",
     "september_equinox": "2024-09-22 12:43:55",
