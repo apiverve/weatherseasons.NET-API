@@ -5,6 +5,7 @@ using System.Text;
 namespace APIVerve
 {
     public class WeatherSeasonsQueryOptions {
+public int year { get; set; }
 }
 
 }
