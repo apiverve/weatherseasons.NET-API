@@ -4,7 +4,7 @@
     <TargetFrameworks>net20;net35;net40;net45;netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>APIVerve.API.WeatherSeasons</Title>
-    <Version>1.1.4</Version>
+    <Version>1.1.5</Version>
     <Authors>APIVerve</Authors>
     <Company>APIVerve</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -14,7 +14,7 @@
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageProjectUrl>https://apiverve.com/?utm_source=nuget</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
-    <Description>Weather Seasons is a simple tool for getting the dates of the solstice and equinox. It returns the dates of the solstice and equinox for the current year.</Description>
+    <Description>Weather Seasons is a simple tool for getting the dates of the solstice and equinox. It returns the dates of the solstice and equinox for a given year.</Description>
     <RepositoryUrl>https://github.com/apiverve/weatherseasons.NET-API</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>weather seasons; weather seasons api; weather seasons tool; weather seasons software; weather seasons service</PackageTags>
