@@ -6,6 +6,12 @@ namespace APIVerve
 {
 public class data
 {
+    [JsonProperty("year")]
+    public int year { get; set; }
+
+    [JsonProperty("timezone")]
+    public string timezone { get; set; }
+
     [JsonProperty("march_equinox")]
     public string marchequinox { get; set; }
 
